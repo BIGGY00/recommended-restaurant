@@ -1,0 +1,149 @@
+@prefix re: <http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#> .
+
+[Jena1: 
+    (?restaurant re:Budget ?budget) 
+    (?budget >= 0) 
+    (?budget <= 300) 
+    (?user re:RunnerType "Fun run") 
+    (?user re:BudgetInterest ?budget) 
+    -> 
+    (?user re:hasRecommended ?restaurant) 
+    (?restaurant re:confidence "84")
+]
+
+[Jena2: 
+    (?restaurant re:hasRestaurantType ?restaurantType) 
+    (?restaurantType re:type "Fast_Dining") 
+    (?user re:RunnerType "Fun run") 
+    (?user re:hasRestaurantTypeInterest "Fast_Dining") 
+    -> 
+    (?user re:hasRecommended ?restaurant) 
+    (?restaurant re:confidence "80")
+]
+
+[Jena3: 
+    (?user re:RunnerType "Fun run") 
+    (?restaurant re:hasRestaurantType ?restaurantType) 
+    (?restaurantType re:type "Fast_Dining") 
+    (?user re:hasRestaurantTypeInterest "Fast_Dining") 
+    -> 
+    (?user re:hasRecommended ?restaurant) 
+    (?restaurant re:confidence "63")
+]
+
+[Jena4: 
+    (?restaurant re:hasRestaurantType ?restaurantType) 
+    (?restaurantType re:type "Fast_Dining") 
+    (?restaurant re:Budget ?budget) 
+    (?budget >= 0) 
+    (?budget <= 300) 
+    (?user re:RunnerType "Fun run") 
+    (?user re:hasRestaurantTypeInterest "Fast_Dining") 
+    (?user re:BudgetInterest ?budget) 
+    -> 
+    (?user re:hasRecommended ?restaurant) 
+    (?restaurant re:confidence "100")
+]
+
+[Jena5: 
+    (?restaurant re:Budget ?budget) 
+    (?budget >= 301) 
+    (?budget <= 600) 
+    (?restaurant re:hasRestaurantType ?restaurantType) 
+    (?restaurantType re:type "Fast_Dining") 
+    (?user re:hasRestaurantTypeInterest "Fast_Dining") 
+    (?user re:BudgetInterest ?budget) 
+    -> 
+    (?user re:hasRecommended ?restaurant) 
+    (?restaurant re:confidence "72")
+]
+
+[Jena6: 
+    (?restaurant re:Budget ?budget) 
+    (?budget >= 301) 
+    (?budget <= 600) 
+    (?user re:RunnerType "Fun run") 
+    (?user re:BudgetInterest ?budget) 
+    -> 
+    (?user re:hasRecommended ?restaurant) 
+    (?restaurant re:confidence "64")
+]
+
+[Jena7: 
+    (?restaurant re:hasRestaurantType ?restaurantType) 
+    (?restaurantType re:type "Fast_Dining") 
+    (?restaurant re:Budget ?budget) 
+    (?budget >= 301) 
+    (?budget <= 600) 
+    (?user re:RunnerType "Fun run") 
+    (?user re:hasRestaurantTypeInterest "Fast_Dining") 
+    (?user re:BudgetInterest ?budget) 
+    -> 
+    (?user re:hasRecommended ?restaurant) 
+    (?restaurant re:confidence "72")
+]
+
+[Jena8: 
+    (?user re:RunnerType "Fun run") 
+    (?restaurant re:Budget ?budget) 
+    (?budget >= 301) 
+    (?budget <= 600) 
+    (?restaurant re:hasRestaurantType ?restaurantType) 
+    (?restaurantType re:type "Fast_Dining") 
+    (?user re:hasRestaurantTypeInterest "Fast_Dining") 
+    (?user re:BudgetInterest ?budget) 
+    -> 
+    (?user re:hasRecommended ?restaurant) 
+    (?restaurant re:confidence "82")
+]
+
+[Jena9: 
+    (?restaurant re:hasRestaurantType ?restaurantType) 
+    (?restaurantType re:type "Kiosk") 
+    (?restaurant re:Budget ?budget) 
+    (?budget >= 0) 
+    (?budget <= 300) 
+    (?user re:hasRestaurantTypeInterest "Kiosk") 
+    (?user re:BudgetInterest ?budget) 
+    -> 
+    (?user re:hasRecommended ?restaurant) 
+    (?restaurant re:confidence "100")
+]
+
+[Jena10: 
+    (?restaurant re:hasRestaurantType ?restaurantType) 
+    (?restaurantType re:type "Kiosk") 
+    (?user re:RunnerType "Fun run") 
+    (?user re:hasRestaurantTypeInterest "Kiosk") 
+    -> 
+    (?user re:hasRecommended ?restaurant) 
+    (?restaurant re:confidence "73")
+]
+
+[Jena11: 
+    (?restaurant re:hasRestaurantType ?restaurantType) 
+    (?restaurantType re:type "Kiosk") 
+    (?restaurant re:Budget ?budget) 
+    (?budget >= 0) 
+    (?budget <= 300) 
+    (?user re:RunnerType "Fun run") 
+    (?user re:hasRestaurantTypeInterest "Kiosk") 
+    (?user re:BudgetInterest ?budget) 
+    -> 
+    (?user re:hasRecommended ?restaurant) 
+    (?restaurant re:confidence "73")
+]
+
+[Jena12: 
+    (?user re:RunnerType "Fun run") 
+    (?restaurant re:hasRestaurantType ?restaurantType) 
+    (?restaurantType re:type "Kiosk") 
+    (?restaurant re:Budget ?budget) 
+    (?budget >= 0) 
+    (?budget <= 300) 
+    (?user re:hasRestaurantTypeInterest "Kiosk") 
+    (?user re:BudgetInterest ?budget) 
+    -> 
+    (?user re:hasRecommended ?restaurant) 
+    (?restaurant re:confidence "100")
+]
