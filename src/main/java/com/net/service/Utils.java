@@ -66,11 +66,14 @@ public class Utils {
                     : "No Nationality";
             String district = solution.get("District") != null ? solution.get("District").toString() : "No District";
             String protein = solution.get("Protein") != null ? solution.get("Protein").toString() : "No Protein Info";
-            String carbohydrates = solution.get("Carbohydrates") != null ? solution.get("Carbohydrates").toString()
+            String carbohydrates = solution.get("Carbohydrates") != null
+                    ? solution.get("Carbohydrates").toString()
                     : "No Carbohydrates Info";
             String fat = solution.get("Fat") != null ? solution.get("Fat").toString() : "No Fat Info";
-            String cleanBudget = solution.get("CleanBudget") != null ? solution.get("CleanBudget").toString()
-                    : "No Budget Info";
+            String cleanMinBudget = solution.get("CleanMinBudget") != null ? solution.get("CleanMinBudget").toString()
+                    : "No Min Budget";
+            String cleanMaxBudget = solution.get("CleanMaxBudget") != null ? solution.get("CleanMaxBudget").toString()
+                    : "No Max Budget";
 
             obj.put("id", x);
             obj.put("restaurant_name", getNameFromURI(restaurantName));
@@ -81,15 +84,13 @@ public class Utils {
             obj.put("protein", protein);
             obj.put("carbohydrates", carbohydrates);
             obj.put("fat", fat);
-            obj.put("clean_budget", cleanBudget);
+            obj.put("clean_min_budget", cleanMinBudget);
+            obj.put("clean_max_budget", cleanMaxBudget);
 
             list.add(obj);
         }
 
-        // System.out.println("Query returned " + list.size() + " results.");
-
-        qexec.close();
-
         return list;
     }
+
 }

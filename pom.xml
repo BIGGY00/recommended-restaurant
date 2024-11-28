@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
@@ -9,18 +8,17 @@
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>recommended-restaurant</name>
-    <url>http://maven.apache.org</url>
 
     <properties>
-        <!-- Define Java version -->
         <java.version>17</java.version>
     </properties>
 
     <dependencies>
+        <!-- JUnit Dependencies -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13.2</version> <!-- You can use the latest version here -->
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -30,21 +28,17 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Apache Jena Core and RDF Processing -->
+        <!-- Apache Jena Dependencies -->
         <dependency>
             <groupId>org.apache.jena</groupId>
             <artifactId>jena-core</artifactId>
             <version>4.8.0</version>
         </dependency>
-
-        <!-- Apache Jena ARQ for SPARQL queries -->
         <dependency>
             <groupId>org.apache.jena</groupId>
             <artifactId>jena-arq</artifactId>
             <version>4.8.0</version>
         </dependency>
-
-        <!-- Apache Jena TDB2 for RDF Storage -->
         <dependency>
             <groupId>org.apache.jena</groupId>
             <artifactId>jena-tdb2</artifactId>
@@ -58,30 +52,29 @@
             <version>3.1.4</version>
         </dependency>
 
-        <!-- SLF4J API for logging -->
+        <!-- Logging Dependencies -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>2.0.9</version>
         </dependency>
-
-        <!-- Logback Classic for logging (if not included in Spring Boot Starter) -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>1.4.11</version>
         </dependency>
 
+        <!-- JSON Library -->
         <dependency>
-    <groupId>net.minidev</groupId>
-    <artifactId>json-smart</artifactId>
-    <version>2.4.11</version>
-</dependency>
+            <groupId>net.minidev</groupId>
+            <artifactId>json-smart</artifactId>
+            <version>2.4.11</version>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
-            <!-- Maven Compiler Plugin to specify Java version -->
+            <!-- Maven Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -97,6 +90,13 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>3.1.4</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
