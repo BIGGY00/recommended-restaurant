@@ -235,14 +235,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Confidence -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Confidence">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Restaurant"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#District -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#District">
@@ -512,6 +504,14 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#WongnaiRatingInterest">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#User"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#confidence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#confidence">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Restaurant"/>
     </owl:DatatypeProperty>
     
 
@@ -6016,36 +6016,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#PekLanMala -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#PekLanMala">
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#GoogleRating"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#NA_M"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Restaurant"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#WongnaiRating"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#4star_G"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#4star_W"/>
-        <re:hasFoodType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Shabu_Sukiyaki_Type"/>
-        <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Chinese"/>
-        <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#PekLanMalaLocation"/>
-        <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Casual_Dining_Type"/>
-        <re:CloseDay>None</re:CloseDay>
-        <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">22:00:00</re:CloseTime>
-        <re:OpenDay>Everyday</re:OpenDay>
-        <re:OpenDay>Friday</re:OpenDay>
-        <re:OpenDay>Monday</re:OpenDay>
-        <re:OpenDay>Saturday</re:OpenDay>
-        <re:OpenDay>Sunday</re:OpenDay>
-        <re:OpenDay>Thursday</re:OpenDay>
-        <re:OpenDay>Tuesday</re:OpenDay>
-        <re:OpenDay>Wednesday</re:OpenDay>
-        <re:OpenTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">15:00:00</re:OpenTime>
-        <re:RestaurantName>Pek Lan Mala</re:RestaurantName>
-        <re:Telephone>923763063</re:Telephone>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#PekLanMalaChuanChuan -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#PekLanMalaChuanChuan">
@@ -6057,6 +6027,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#4star_W"/>
         <re:hasFoodType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Shabu_Sukiyaki_Type"/>
         <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Chinese"/>
+        <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#PekLanMalaLocation"/>
         <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Casual_Dining_Type"/>
         <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">200.0</re:Budget>
         <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">300.0</re:Budget>
@@ -6081,7 +6052,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#PekLanMalaLocation">
         <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Location"/>
-        <re:isRestaurantPlaceOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#PekLanMala"/>
+        <re:isRestaurantPlaceOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#PekLanMalaChuanChuan"/>
         <re:District>Mueang Phuket</re:District>
         <re:PlaceName>Pek Lan Mala Location</re:PlaceName>
         <re:Province>Phuket</re:Province>
@@ -7783,36 +7754,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#ThanawatT.FoodPorkBBQ -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#ThanawatT.FoodPorkBBQ">
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#GoogleRating"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#NA_M"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#NA_W"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Restaurant"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#4star_G"/>
-        <re:hasFoodType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#GrilledPork_Type"/>
-        <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Thai"/>
-        <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
-        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.0</re:Budget>
-        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">200.0</re:Budget>
-        <re:CloseDay>None</re:CloseDay>
-        <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">23:00:00</re:CloseTime>
-        <re:OpenDay>Everyday</re:OpenDay>
-        <re:OpenDay>Friday</re:OpenDay>
-        <re:OpenDay>Monday</re:OpenDay>
-        <re:OpenDay>Saturday</re:OpenDay>
-        <re:OpenDay>Sunday</re:OpenDay>
-        <re:OpenDay>Thursday</re:OpenDay>
-        <re:OpenDay>Tuesday</re:OpenDay>
-        <re:OpenDay>Wednesday</re:OpenDay>
-        <re:OpenTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">16:00:00</re:OpenTime>
-        <re:RestaurantName>Thanawat T. Food Pork BBQ</re:RestaurantName>
-        <re:Telephone>649562865</re:Telephone>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#ThanawatTFoodPorkBBQ -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#ThanawatTFoodPorkBBQ">
@@ -8625,36 +8566,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#BigBoys’BurgerClub -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#BigBoys’BurgerClub">
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#GoogleRating"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#NA_M"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#NA_W"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Restaurant"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#4star_G"/>
-        <re:hasFoodType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Burger_Type"/>
-        <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#American"/>
-        <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Kiosk_Type"/>
-        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">300.0</re:Budget>
-        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">400.0</re:Budget>
-        <re:CloseDay>None</re:CloseDay>
-        <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">23:00:00</re:CloseTime>
-        <re:OpenDay>Everyday</re:OpenDay>
-        <re:OpenDay>Friday</re:OpenDay>
-        <re:OpenDay>Monday</re:OpenDay>
-        <re:OpenDay>Saturday</re:OpenDay>
-        <re:OpenDay>Sunday</re:OpenDay>
-        <re:OpenDay>Thursday</re:OpenDay>
-        <re:OpenDay>Tuesday</re:OpenDay>
-        <re:OpenDay>Wednesday</re:OpenDay>
-        <re:OpenTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">12:00:00</re:OpenTime>
-        <re:RestaurantName>Big Boys’ Burger Club</re:RestaurantName>
-        <re:Telephone>964695966</re:Telephone>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#DrunkenBurger&amp;BBQAtPhuketTown -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#DrunkenBurger&amp;BBQAtPhuketTown">
@@ -8742,37 +8653,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#FIVELoavesBurgers&amp;Cafe’ -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#FIVELoavesBurgers&amp;Cafe’">
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#GoogleRating"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#NA_M"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Restaurant"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#WongnaiRating"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#4star_G"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#4star_W"/>
-        <re:hasFoodType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Burger_Type"/>
-        <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#American"/>
-        <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
-        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">300.0</re:Budget>
-        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">400.0</re:Budget>
-        <re:CloseDay>None</re:CloseDay>
-        <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">21:30:00</re:CloseTime>
-        <re:OpenDay>Everyday</re:OpenDay>
-        <re:OpenDay>Friday</re:OpenDay>
-        <re:OpenDay>Monday</re:OpenDay>
-        <re:OpenDay>Saturday</re:OpenDay>
-        <re:OpenDay>Sunday</re:OpenDay>
-        <re:OpenDay>Thursday</re:OpenDay>
-        <re:OpenDay>Tuesday</re:OpenDay>
-        <re:OpenDay>Wednesday</re:OpenDay>
-        <re:OpenTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">12:00:00</re:OpenTime>
-        <re:RestaurantName>FIVE Loaves Burgers &amp; Cafe’</re:RestaurantName>
-        <re:Telephone>929203233</re:Telephone>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#JNangVegan&amp;VegetarianRestaurant -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#JNangVegan&amp;VegetarianRestaurant">
@@ -8813,96 +8693,6 @@
         <re:PlaceName>J Nang Vegan &amp; Vegetarian restaurant Location</re:PlaceName>
         <re:Province>Phuket</re:Province>
         <re:Subdistrict>Patong</re:Subdistrict>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#JaeLee&apos;sChickenRice -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#JaeLee&apos;sChickenRice">
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#GoogleRating"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#NA_M"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Restaurant"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#WongnaiRating"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#4star_G"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#4star_W"/>
-        <re:hasFoodType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#OneDishMeal_Type"/>
-        <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Thai"/>
-        <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
-        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
-        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.0</re:Budget>
-        <re:CloseDay>None</re:CloseDay>
-        <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">11:30:00</re:CloseTime>
-        <re:OpenDay>Everyday</re:OpenDay>
-        <re:OpenDay>Friday</re:OpenDay>
-        <re:OpenDay>Monday</re:OpenDay>
-        <re:OpenDay>Saturday</re:OpenDay>
-        <re:OpenDay>Sunday</re:OpenDay>
-        <re:OpenDay>Thursday</re:OpenDay>
-        <re:OpenDay>Tuesday</re:OpenDay>
-        <re:OpenDay>Wednesday</re:OpenDay>
-        <re:OpenTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">5:00:00</re:OpenTime>
-        <re:RestaurantName>Jae Lee&apos;s Chicken Rice</re:RestaurantName>
-        <re:Telephone>950213252</re:Telephone>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#MaeTing&apos;sKhanomJeen -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#MaeTing&apos;sKhanomJeen">
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#GoogleRating"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#NA_M"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Restaurant"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#WongnaiRating"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#3star_W"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#4star_G"/>
-        <re:hasFoodType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#OneDishMeal_Type"/>
-        <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Thai"/>
-        <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
-        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
-        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.0</re:Budget>
-        <re:CloseDay>None</re:CloseDay>
-        <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">11:30:00</re:CloseTime>
-        <re:OpenDay>Everyday</re:OpenDay>
-        <re:OpenDay>Friday</re:OpenDay>
-        <re:OpenDay>Monday</re:OpenDay>
-        <re:OpenDay>Saturday</re:OpenDay>
-        <re:OpenDay>Sunday</re:OpenDay>
-        <re:OpenDay>Thursday</re:OpenDay>
-        <re:OpenDay>Tuesday</re:OpenDay>
-        <re:OpenDay>Wednesday</re:OpenDay>
-        <re:OpenTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">7:00:00</re:OpenTime>
-        <re:RestaurantName>Mae Ting&apos;s Khanom Jeen</re:RestaurantName>
-        <re:Telephone>951905049</re:Telephone>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#NanaHealthyCafe&apos;&amp;Bistro -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#NanaHealthyCafe&apos;&amp;Bistro">
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#GoogleRating"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#NA_M"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#NA_W"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Restaurant"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#4star_G"/>
-        <re:hasFoodType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#CleanFood_Salad_Type"/>
-        <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Thai"/>
-        <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
-        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
-        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.0</re:Budget>
-        <re:CloseDay>Monday</re:CloseDay>
-        <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">19:00:00</re:CloseTime>
-        <re:OpenDay>Friday</re:OpenDay>
-        <re:OpenDay>Saturday</re:OpenDay>
-        <re:OpenDay>Sunday</re:OpenDay>
-        <re:OpenDay>Thursday</re:OpenDay>
-        <re:OpenDay>Tuesday</re:OpenDay>
-        <re:OpenDay>Wednesday</re:OpenDay>
-        <re:OpenTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">9:00:00</re:OpenTime>
-        <re:RestaurantName>NanaHealthy Cafe&apos; &amp; Bistro</re:RestaurantName>
-        <re:Telephone>946593924</re:Telephone>
     </owl:NamedIndividual>
     
 
@@ -9032,37 +8822,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#SantaFe&apos;Steak -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#SantaFe&apos;Steak">
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#GoogleRating"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#NA_M"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Restaurant"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#WongnaiRating"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#3star_G"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#3star_W"/>
-        <re:hasFoodType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Steak_Type"/>
-        <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#European"/>
-        <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Casual_Dining_Type"/>
-        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">101.0</re:Budget>
-        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">250.0</re:Budget>
-        <re:CloseDay>None</re:CloseDay>
-        <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">20:00:00</re:CloseTime>
-        <re:OpenDay>Everyday</re:OpenDay>
-        <re:OpenDay>Friday</re:OpenDay>
-        <re:OpenDay>Monday</re:OpenDay>
-        <re:OpenDay>Saturday</re:OpenDay>
-        <re:OpenDay>Sunday</re:OpenDay>
-        <re:OpenDay>Thursday</re:OpenDay>
-        <re:OpenDay>Tuesday</re:OpenDay>
-        <re:OpenDay>Wednesday</re:OpenDay>
-        <re:OpenTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">11:00:00</re:OpenTime>
-        <re:RestaurantName>Santa Fe&apos; Steak</re:RestaurantName>
-        <re:Telephone>76307235</re:Telephone>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Surf&amp;TurfBySoulKitchen -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Surf&amp;TurfBySoulKitchen">
@@ -9103,37 +8862,6 @@
         <re:PlaceName>Surf &amp; Turf by Soul Kitchen Location</re:PlaceName>
         <re:Province>Phuket</re:Province>
         <re:Subdistrict>Talat Yai</re:Subdistrict>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Torry&apos;sIceCream -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Torry&apos;sIceCream">
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#GoogleRating"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#NA_M"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Restaurant"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#WongnaiRating"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#4star_G"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#4star_W"/>
-        <re:hasFoodType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#IceCream_Type"/>
-        <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Thai"/>
-        <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
-        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.0</re:Budget>
-        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">200.0</re:Budget>
-        <re:CloseDay>None</re:CloseDay>
-        <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">18:00:00</re:CloseTime>
-        <re:OpenDay>Everyday</re:OpenDay>
-        <re:OpenDay>Friday</re:OpenDay>
-        <re:OpenDay>Monday</re:OpenDay>
-        <re:OpenDay>Saturday</re:OpenDay>
-        <re:OpenDay>Sunday</re:OpenDay>
-        <re:OpenDay>Thursday</re:OpenDay>
-        <re:OpenDay>Tuesday</re:OpenDay>
-        <re:OpenDay>Wednesday</re:OpenDay>
-        <re:OpenTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">10:00:00</re:OpenTime>
-        <re:RestaurantName>Torry&apos;s Ice Cream</re:RestaurantName>
-        <re:Telephone>76510888</re:Telephone>
     </owl:NamedIndividual>
     
 
@@ -9206,4 +8934,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
-
