@@ -1,58 +1,16 @@
 package com.net.service;
 
-// import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-// import org.slf4j.Logger;
-// import org.slf4j.LoggerFactory;
 
 import net.minidev.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
 @CrossOrigin
 @RequestMapping("/api/restaurants")
 public class RestaurantController {
-
-    // private static final Logger logger =
-    // LoggerFactory.getLogger(RestaurantController.class);
-
-    // @Autowired
-    // private RulesService rulesService;
-
-    // @PostMapping("/recommend")
-    // public List<String> recommendRestaurants(@RequestBody UserInput input) {
-    // // Log the incoming user input
-    // // logger.info("Received user input: runnerType = {}, budget = {},
-    // restaurantType = {}, foodTypes = {}",
-    // // input.getRunnerType(), input.getBudget(), input.getRestaurantType(),
-    // input.getFoodTypes());
-
-    // // Create SPARQL query based on input
-    // String sparqlQuery = """
-    // PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    // PREFIX owl: <http://www.w3.org/2002/07/owl#>
-    // PREFIX re:
-    // <http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#>
-
-    // SELECT ?Restaurant
-    // WHERE {
-    // """;
-
-    // // Log the SPARQL query
-    // // logger.debug("Generated SPARQL query: {}", sparqlQuery);
-
-    // // Execute query and get results
-    // List<String> restaurantResults = rulesService.executeQuery(sparqlQuery);
-
-    // // Log the results
-    // // logger.info("Number of restaurants found: {}", restaurantResults.size());
-
-    // // Return the results as a list of restaurant names (or IDs, depending on
-    // your
-    // // data)
-    // return restaurantResults;
-    // }
     @PostMapping("/filter")
     public List<JSONObject> filterRestaurants(@RequestBody UserInput input) {
         String sparqlQuery = """
@@ -85,17 +43,14 @@ public class RestaurantController {
                     }
                 """;
 
-        // If Budget parameters are provided, include the FILTER in the subquery
         String budgetFilter = "";
         if (input.getBudgetMin() != null && input.getBudgetMax() != null) {
             budgetFilter = String.format("FILTER(?Budget >= %s && ?Budget <= %s).", input.getBudgetMin(),
                     input.getBudgetMax());
         }
 
-        // Replace placeholder with the actual FILTER condition if needed
         sparqlQuery = String.format(sparqlQuery, budgetFilter);
 
-        // Adding other filters based on user input
         if (input.getRestaurantType() != null && !input.getRestaurantType().isEmpty()) {
             sparqlQuery += String.format("\tFILTER(?RestaurantType IN (re:%s)).\n", input.getRestaurantType());
         }
@@ -112,13 +67,27 @@ public class RestaurantController {
             sparqlQuery += filterClause.toString();
         }
 
-        // Close the query
+        List<String> nutrientConditions = new ArrayList<>();
+
+        if (input.getCarb() != null && !input.getCarb().isEmpty()) {
+            nutrientConditions.add(String.format("?Carbohydrates = \"%s\"", input.getCarb()));
+        }
+        if (input.getProtein() != null && !input.getProtein().isEmpty()) {
+            nutrientConditions.add(String.format("?Protein = \"%s\"", input.getProtein()));
+        }
+        if (input.getFat() != null && !input.getFat().isEmpty()) {
+            nutrientConditions.add(String.format("?Fat = \"%s\"", input.getFat()));
+        }
+
+        if (!nutrientConditions.isEmpty()) {
+            String combinedConditions = String.join(" || ", nutrientConditions);
+            sparqlQuery += String.format("\tFILTER(%s).\n", combinedConditions);
+        }
+
         sparqlQuery += "}";
 
-        // Debug: Print the generated query
         System.out.println(sparqlQuery);
 
-        // Execute the query
         List<JSONObject> resultSet = Utils.findRestaurants(sparqlQuery);
         return resultSet;
     }

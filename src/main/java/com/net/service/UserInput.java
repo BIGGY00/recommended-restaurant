@@ -8,6 +8,9 @@ public class UserInput {
     private String budgetMax;
     private String restaurantType;
     private List<String> foodTypes;
+    private String carb;
+    private String protein;
+    private String fat;
 
     // Getters and setters
     public String getRunnerType() {
@@ -48,5 +51,27 @@ public class UserInput {
 
     public void setFoodTypes(List<String> foodTypes) {
         this.foodTypes = foodTypes;
+    }
+
+    public String getCarb() {
+        return carb;
+    }
+
+    public void setCarb(String carb) {
+        this.carb = carb;
+    }
+    public String getProtein() {
+        return protein;
+    }
+
+    public void setProtein(String protein) {
+        this.protein = protein;
+    }
+    public String getFat() {
+        return fat;
+    }
+
+    public void setFat(String fat) {
+        this.fat = fat;
     }
 }

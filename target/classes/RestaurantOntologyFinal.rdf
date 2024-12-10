@@ -1385,6 +1385,7 @@
         <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#American"/>
         <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#BigBoysBurgerClubLocation"/>
         <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Kiosk_Type"/>
+        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
         <re:CloseDay>None</re:CloseDay>
         <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">23:00:00</re:CloseTime>
         <re:OpenDay>Everyday</re:OpenDay>
@@ -1519,6 +1520,7 @@
         <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Thai"/>
         <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#BreakfastTimeLocation"/>
         <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
+        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
         <re:CloseDay>None</re:CloseDay>
         <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">12:30:00</re:CloseTime>
         <re:OpenDay>Everyday</re:OpenDay>
@@ -1639,6 +1641,7 @@
         <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#American"/>
         <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#BurgerSaloonLocation"/>
         <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
+        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
         <re:CloseDay>None</re:CloseDay>
         <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">0:00:00</re:CloseTime>
         <re:OpenDay>Everyday</re:OpenDay>
@@ -2253,6 +2256,7 @@
         <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Japanese"/>
         <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#EzzeSushiLocation"/>
         <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Casual_Dining_Type"/>
+        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
         <re:CloseDay>None</re:CloseDay>
         <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">22:00:00</re:CloseTime>
         <re:OpenDay>Everyday</re:OpenDay>
@@ -3307,6 +3311,7 @@
         <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Thai"/>
         <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#JaeLeeChickenRiceLocation"/>
         <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
+        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
         <re:CloseDay>None</re:CloseDay>
         <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">11:30:00</re:CloseTime>
         <re:OpenDay>Everyday</re:OpenDay>
@@ -4028,6 +4033,7 @@
         <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Japanese"/>
         <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#KinsuAsiaBarLocation"/>
         <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
+        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
         <re:CloseDay>Monday</re:CloseDay>
         <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">0:00:00</re:CloseTime>
         <re:OpenDay>Friday</re:OpenDay>
@@ -4579,6 +4585,7 @@
         <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Thai"/>
         <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#MaeTingKhanomJeenLocation"/>
         <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
+        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
         <re:CloseDay>None</re:CloseDay>
         <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">11:30:00</re:CloseTime>
         <re:OpenDay>Everyday</re:OpenDay>
@@ -5287,6 +5294,7 @@
         <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Thai"/>
         <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#NanaHealthyLocation"/>
         <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
+        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
         <re:CloseDay>Monday</re:CloseDay>
         <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">19:00:00</re:CloseTime>
         <re:OpenDay>Friday</re:OpenDay>
@@ -6301,6 +6309,7 @@
         <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Japanese"/>
         <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#RamenSakabaNarutoLocation"/>
         <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
+        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
         <re:CloseDay>None</re:CloseDay>
         <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">22:30:00</re:CloseTime>
         <re:OpenDay>Everyday</re:OpenDay>
@@ -6968,6 +6977,7 @@
         <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Japanese"/>
         <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#SHOKUNLocation"/>
         <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
+        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
         <re:CloseDay>None</re:CloseDay>
         <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">21:00:00</re:CloseTime>
         <re:OpenDay>Everyday</re:OpenDay>
@@ -7145,6 +7155,7 @@
         <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#European"/>
         <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#SantaFeSteakLocation"/>
         <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Casual_Dining_Type"/>
+        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
         <re:CloseDay>None</re:CloseDay>
         <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">20:00:00</re:CloseTime>
         <re:OpenDay>Everyday</re:OpenDay>
@@ -7199,6 +7210,7 @@
         <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Korean"/>
         <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#SeoulGogiLocation"/>
         <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
+        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
         <re:CloseDay>None</re:CloseDay>
         <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">23:00:00</re:CloseTime>
         <re:OpenDay>Everyday</re:OpenDay>
@@ -7342,6 +7354,7 @@
         <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Indian"/>
         <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#ShreeHareKrishnaLocation"/>
         <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
+        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
         <re:CloseDay>None</re:CloseDay>
         <re:OpenDay>Everyday</re:OpenDay>
         <re:OpenDay>Friday</re:OpenDay>
@@ -7766,6 +7779,7 @@
         <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Thai"/>
         <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#ThanawatTFoodPorkBBQLocation"/>
         <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
+        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
         <re:CloseDay>None</re:CloseDay>
         <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">23:00:00</re:CloseTime>
         <re:OpenDay>Everyday</re:OpenDay>
@@ -7941,6 +7955,7 @@
         <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Thai"/>
         <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#TorrysIceCreamLocation"/>
         <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
+        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
         <re:CloseDay>None</re:CloseDay>
         <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">18:00:00</re:CloseTime>
         <re:OpenDay>Everyday</re:OpenDay>
@@ -8140,6 +8155,7 @@
         <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#European"/>
         <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#WagyuSteakhouseLocation"/>
         <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fine_Dining_Type"/>
+        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
         <re:CloseDay>None</re:CloseDay>
         <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">0:00:00</re:CloseTime>
         <re:OpenDay>Everyday</re:OpenDay>
@@ -8363,6 +8379,7 @@
         <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Thai"/>
         <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#YingCharoenBBQPhuketLocation"/>
         <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
+        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
         <re:CloseDay>None</re:CloseDay>
         <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">4:00:00</re:CloseTime>
         <re:OpenDay>Everyday</re:OpenDay>
@@ -8448,6 +8465,7 @@
         <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Chinese"/>
         <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#YujiNoodlesLocation"/>
         <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
+        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
         <re:CloseDay>None</re:CloseDay>
         <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">2:00:00</re:CloseTime>
         <re:OpenDay>Everyday</re:OpenDay>
@@ -8623,6 +8641,7 @@
         <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#American"/>
         <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#FIVELoavesBurgers&amp;CafeLocation"/>
         <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
+        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
         <re:CloseDay>None</re:CloseDay>
         <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">21:30:00</re:CloseTime>
         <re:OpenDay>Everyday</re:OpenDay>
@@ -8750,6 +8769,7 @@
         <re:hasRestaurantNationality rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Japanese"/>
         <re:hasRestaurantPlace rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#PhuketIzakaya&amp;NoodleBarLocation"/>
         <re:hasRestaurantType rdf:resource="http://www.semanticweb.org/acer/ontologies/2567/8/restaurantontologyfinal#Fast_Dining_Type"/>
+        <re:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</re:Budget>
         <re:CloseDay>None</re:CloseDay>
         <re:CloseTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">23:00:00</re:CloseTime>
         <re:OpenDay>Everyday</re:OpenDay>
